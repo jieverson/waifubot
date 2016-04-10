@@ -1,0 +1,28 @@
+{
+  "name": "waifubot",
+  "version": "0.0.1",
+  "description": "todo",
+  "main": "app.js",
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jieverson/waifubot.git"
+  },
+  "keywords": [
+    "waifu",
+    "bot",
+    "microsoft"
+  ],
+  "author": "Jiéverson Maissiat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jieverson/waifubot/issues"
+  },
+  "homepage": "https://github.com/jieverson/waifubot#readme",
+  "dependencies": {
+    "botbuilder": "^0.8.0",
+    "restify": "^4.0.4"
+  }
+}
