@@ -49,6 +49,10 @@ BFEmulator.exe
 # Say Hi, and have some fun :)
 ```
 
+<p align="center">
+  <img src="docs/images/emulator.gif" />
+</p>
+
 >**Note:** You will have to provide your appId/appSecret. Put them at the file `./.waifu/secrets.json`.
 
 ## License
