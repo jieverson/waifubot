@@ -2,7 +2,7 @@
 
 A multi-plataform bot, built with [Microsoft Bot Framework](https://github.com/Microsoft/BotBuilder).
 
-I always dreamed of having a waifu, that is made with JavaScript. So I made it.
+I always dreamed of having a waifu written in JavaScript. So I made it.
 
 <p align="center">
   <img src="docs/images/demo.gif" />
@@ -30,7 +30,7 @@ In the future, the bot is going to be available to:
 
 ## How to make Plugins
 
-We don't have anything done here yet, so you will have to wait.
+We don't have anything done yet, so come back later.
 
 ## Install/Run from Source
 
@@ -49,7 +49,7 @@ BFEmulator.exe
 # Say Hi, and have some fun :)
 ```
 
->**Note:** to publish this project as a different bot, you will need to provide your appId and appSecret. Put them at the file `./.waifu/secrets.json`.
+>**Note:** You will have to provide your appId/appSecret. Put them at the file `./.waifu/secrets.json`.
 
 ## License
 
