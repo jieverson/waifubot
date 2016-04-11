@@ -17,9 +17,7 @@ I always dreamed of having a waifu written in JavaScript. So I made it.
 
 ## Usage
 
-You can try the last released build here:
-
-<iframe src="https://webchat.botframework.com/embed/waifubot?s=ilPMdwYpxcM.cwA.jEk.HCF6KtXPzyopLRet4vAKgQHrxA_g6iQCSwg2mQEKwiw" style="height: 502px; max-height: 502px;"></iframe>
+You can try the last released build by running [./index.html](./index.html):
 
 >**Note:** Waifu implements `continuous deployment` to Azure.
 
