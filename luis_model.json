@@ -1,0 +1,679 @@
+{
+  "luis_schema_version": "1.2.0",
+  "name": "Waifu",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "Name": "LikeAnime",
+      "Children": []
+    },
+    {
+      "Name": "Greeting",
+      "Children": []
+    },
+    {
+      "Name": "CurrentSeasonAnimes",
+      "Children": []
+    },
+    {
+      "Name": "Quote",
+      "Children": []
+    },
+    {
+      "Name": "TellJoke",
+      "Children": []
+    },
+    {
+      "Name": "None",
+      "Children": []
+    },
+    {
+      "Name": "Init",
+      "Children": []
+    }
+  ],
+  "entities": [
+    {
+      "Name": "Anime",
+      "Children": []
+    },
+    {
+      "Name": "Character",
+      "Children": []
+    }
+  ],
+  "bing_entities": [],
+  "actions": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "i would like to hear a joke",
+      "intent": "TellJoke",
+      "entities": []
+    },
+    {
+      "text": "any jokes?",
+      "intent": "TellJoke",
+      "entities": []
+    },
+    {
+      "text": "winter season",
+      "intent": "CurrentSeasonAnimes",
+      "entities": []
+    },
+    {
+      "text": "fall season",
+      "intent": "CurrentSeasonAnimes",
+      "entities": []
+    },
+    {
+      "text": "spring season",
+      "intent": "CurrentSeasonAnimes",
+      "entities": []
+    },
+    {
+      "text": "summer season",
+      "intent": "CurrentSeasonAnimes",
+      "entities": []
+    },
+    {
+      "text": "can you tell a joke?",
+      "intent": "TellJoke",
+      "entities": []
+    },
+    {
+      "text": "joke",
+      "intent": "TellJoke",
+      "entities": []
+    },
+    {
+      "text": "say a joke",
+      "intent": "TellJoke",
+      "entities": []
+    },
+    {
+      "text": "say a joke please",
+      "intent": "TellJoke",
+      "entities": []
+    },
+    {
+      "text": "animes summer",
+      "intent": "CurrentSeasonAnimes",
+      "entities": []
+    },
+    {
+      "text": "animes winter",
+      "intent": "CurrentSeasonAnimes",
+      "entities": []
+    },
+    {
+      "text": "tell me a joke",
+      "intent": "TellJoke",
+      "entities": []
+    },
+    {
+      "text": "animes spring",
+      "intent": "CurrentSeasonAnimes",
+      "entities": []
+    },
+    {
+      "text": "current season",
+      "intent": "CurrentSeasonAnimes",
+      "entities": []
+    },
+    {
+      "text": "animes now",
+      "intent": "CurrentSeasonAnimes",
+      "entities": []
+    },
+    {
+      "text": "what animes are streaming now?",
+      "intent": "CurrentSeasonAnimes",
+      "entities": []
+    },
+    {
+      "text": "do not say a joke",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "what are the current season animes?",
+      "intent": "CurrentSeasonAnimes",
+      "entities": []
+    },
+    {
+      "text": "i do not want a joke",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "are you joking?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "animes fall",
+      "intent": "CurrentSeasonAnimes",
+      "entities": []
+    },
+    {
+      "text": "quote okabe",
+      "intent": "Quote",
+      "entities": [
+        {
+          "entity": "Character",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "quote enma ai",
+      "intent": "Quote",
+      "entities": [
+        {
+          "entity": "Character",
+          "startPos": 1,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "quote pikachu",
+      "intent": "Quote",
+      "entities": [
+        {
+          "entity": "Character",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "quote yuno",
+      "intent": "Quote",
+      "entities": [
+        {
+          "entity": "Character",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "quote yuki",
+      "intent": "Quote",
+      "entities": [
+        {
+          "entity": "Character",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "i really liked shokugeki no souma",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 3,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "fairy tail is great",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 0,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "i love naruto",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "quote naruto",
+      "intent": "Quote",
+      "entities": [
+        {
+          "entity": "Character",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "like attack on titans",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 1,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i like kiss x sis",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 2,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "i like evangelion",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "i love evangelion",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "evangelion is great",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "i like fate stay night",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 2,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "i like fullmetal alchemist",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i like jigoku shoujo",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i like higurashi no naku koro ni",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 2,
+          "endPos": 4
+        },
+        {
+          "entity": "Anime",
+          "startPos": 5,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "i like death note",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i love soul eater",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Anime",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i love steins;gate",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 2,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "sao is great",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "i love sao",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "i like sword art online",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 2,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "i like log horizon",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i like magi",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "i love magi",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "magi is great",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "i like magi: the kingdom of magic",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 2,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "i love magi: the kingdom of magic",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 2,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "magi: the kingdom of magic is great",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 0,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "hello",
+      "intent": "Init",
+      "entities": []
+    },
+    {
+      "text": "i like fairy tail",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "test",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i like naruto",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "i love you",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "i like you",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "i like it",
+      "intent": "LikeAnime",
+      "entities": []
+    },
+    {
+      "text": "i like eva",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "akama ga kill is great",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 0,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "eva is great",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "i like",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "like",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "Init",
+      "entities": []
+    },
+    {
+      "text": "i luv you",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "any quotes?",
+      "intent": "Quote",
+      "entities": []
+    },
+    {
+      "text": "can you tell me a joke?",
+      "intent": "TellJoke",
+      "entities": []
+    },
+    {
+      "text": "quote someone",
+      "intent": "Quote",
+      "entities": []
+    },
+    {
+      "text": "you are great",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "ble",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "tell me a quote",
+      "intent": "Quote",
+      "entities": []
+    },
+    {
+      "text": "are u working?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "what?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "shit",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "have you watched clannad?",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "what should i watch from the current season?",
+      "intent": "CurrentSeasonAnimes",
+      "entities": []
+    },
+    {
+      "text": "hi?",
+      "intent": "Init",
+      "entities": []
+    }
+  ]
+}

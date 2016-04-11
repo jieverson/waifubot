@@ -34,6 +34,8 @@ In the future, the bot is going to be available to:
 
 ## Install/Run from Source
 
+Create a new app at [LUIS](https://www.luis.ai/) importing our provided [./luis_model.json](./luis_model.json).
+
 ```shell
 # Clone this repo
 git clone https://github.com/jieverson/waifubot.git
@@ -41,11 +43,17 @@ git clone https://github.com/jieverson/waifubot.git
 cd waifubot
 # Install dependencies
 npm install
-# Run the server at localhost
+# Set environment variables
+set LUIS_APP_ID=`YOUR_LUIS_APP_ID`
+set LUIS_SUBSCRIPTION_KEY=`YOUR_LUIS_SUBSCRIPTION_KEY`
+# Run server at localhost
 node app.js
-# Run the BFEmulator
-cd emulator
-BFEmulator.exe
+# Run BFEmulator
+cd emulator && BFEmulator.exe
+# Open emulator settings
+/settings
+# Set current endpoint to:
+http://localhost:3978/api/bot
 # Say Hi, and have some fun :)
 ```
 
@@ -53,7 +61,7 @@ BFEmulator.exe
   <img src="docs/images/emulator.gif" />
 </p>
 
->**Note:** You will have to provide your appId/appSecret. Put them at the file `./.waifu/secrets.json`.
+>**Note:** You can create your app at [Bot Framework](https://dev.botframework.com/) if you want to set `BOT_APP_ID` and `BOT_APP_SECRET`.
 
 ## How to make Plugins
 
