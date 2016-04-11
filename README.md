@@ -17,16 +17,18 @@ I always dreamed of having a waifu written in JavaScript. So I made it.
 
 ## Usage
 
-Current, you can run [demo/index.html](demo/index.html), to talk to the last released build.
+You can try the last released build here:
 
-Waifu implements `continuous deployment`, so the released version will always be updated to the last pushed version.
+<iframe src="https://webchat.botframework.com/embed/waifubot?s=ilPMdwYpxcM.cwA.jEk.HCF6KtXPzyopLRet4vAKgQHrxA_g6iQCSwg2mQEKwiw" style="height: 502px; max-height: 502px;"></iframe>
+
+>**Note:** Waifu implements `continuous deployment` to Azure.
 
 In the future, the bot is going to be available to:
-* Direct Line
 * Slack
 * Skype
 * Email
 * SMS
+* Probably other stuff...
 
 ## How to make Plugins
 
