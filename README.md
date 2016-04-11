@@ -3,7 +3,6 @@
 A javascript bot, built using [Microsoft Bot Framework](https://github.com/Microsoft/BotBuilder) and processing natural language with [LUIS](https://www.luis.ai/).
 
 > I always dreamed of having a waifu written in JavaScript. So I made it.
-> - Me, beeing Nerd
 
 <p align="center">
   <img src="docs/images/demo.gif" />
@@ -18,7 +17,7 @@ A javascript bot, built using [Microsoft Bot Framework](https://github.com/Micro
 
 ## Usage
 
-You can try the last released build by running [/demo/index.html](./demo/index.html):
+You can try the last released build by running [./demo/index.html](https://rawgit.com/jieverson/waifubot/master/demo/index.html):
 
 >**Note:** Waifu implements `continuous deployment` to Azure.
 
