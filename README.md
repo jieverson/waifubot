@@ -1,8 +1,9 @@
 # waifubot
 
-A multi-plataform bot, built with [Microsoft Bot Framework](https://github.com/Microsoft/BotBuilder).
+A javascript bot, built using [Microsoft Bot Framework](https://github.com/Microsoft/BotBuilder) and processing natural language with [LUIS](https://www.luis.ai/).
 
-I always dreamed of having a waifu written in JavaScript. So I made it.
+> I always dreamed of having a waifu written in JavaScript. So I made it.
+> - Me, beeing Nerd
 
 <p align="center">
   <img src="docs/images/demo.gif" />
@@ -10,14 +11,14 @@ I always dreamed of having a waifu written in JavaScript. So I made it.
 
 ## Features
 
-* Shit talking
+* Commands in natural language (just English now)
 * TODO: Alerts
 * TODO: Plugins in Pure JavaScript
 * Actually, looking for suggestions...
 
 ## Usage
 
-You can try the last released build by running [./index.html](./index.html):
+You can try the last released build by running [/demo/index.html](./demo/index.html):
 
 >**Note:** Waifu implements `continuous deployment` to Azure.
 
