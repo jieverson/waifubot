@@ -34,7 +34,7 @@ In the future, the bot is going to be available to:
 
 ## Install/Run from Source
 
-Create a new app at [LUIS](https://www.luis.ai/) importing our provided [./luis_model.json](./luis_model.json).
+Create a new app at [LUIS](https://www.luis.ai/) importing our provided [luis_model.json](./luis_model.json).
 
 ```shell
 # Clone this repo
@@ -44,8 +44,8 @@ cd waifubot
 # Install dependencies
 npm install
 # Set environment variables
-set LUIS_APP_ID=`YOUR_LUIS_APP_ID`
-set LUIS_SUBSCRIPTION_KEY=`YOUR_LUIS_SUBSCRIPTION_KEY`
+set LUIS_APP_ID=YOUR_LUIS_APP_ID
+set LUIS_SUBSCRIPTION_KEY=YOUR_LUIS_SUBSCRIPTION_KEY
 # Run server at localhost
 node app.js
 # Run BFEmulator
@@ -69,4 +69,4 @@ We don't have anything done yet, so come back later.
 
 ## License
 
-MIT
+[The MIT License (MIT)](./LICENSE)
