@@ -3,7 +3,7 @@ var builder = require('botbuilder');
 
 // Sensitive data load (you should create this file to keep your keys)
 try{
-    var secrets = require('./.waifu/secrets.json');    
+    var secrets = require('./.waifu/secrets.json');
 }
 catch(ex){
     var secrets = {
@@ -68,11 +68,6 @@ luis.on('TellJoke', [
 
 // No intent match
 luis.onDefault(builder.DialogAction.send("I'm sorry I didn't understand. Say Hello."));
-
-// Old bot
-/*bot.add('/', function (session) {
-    session.send('Okaeri!');
-});*/
 
 // Setup Restify Server
 var server = restify.createServer();

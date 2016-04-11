@@ -4,7 +4,8 @@
   "description": "todo",
   "main": "app.js",
   "scripts": {
-    "test": "grunt nodeunit"
+    //"test": "grunt nodeunit"
+    "test": "nodeunit tests.js"
   },
   "repository": {
     "type": "git",
