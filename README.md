@@ -1,12 +1,14 @@
 # waifubot
 
-A javascript bot, built using [Microsoft Bot Framework](https://github.com/Microsoft/BotBuilder) and processing natural language with [LUIS](https://www.luis.ai/).
+A javascript bot for **Anime Lovers**, built using [Microsoft Bot Framework](https://github.com/Microsoft/BotBuilder) and processing natural language with [LUIS](https://www.luis.ai/).
 
-> I always dreamed of having a waifu written in JavaScript. So I made it.
+> I always dreamed of having a waifu written in JavaScript. So I made it myself.
 
 <p align="center">
   <img src="docs/images/demo.gif" />
 </p>
+
+> Otakus gonna love it!
 
 ## Features
 
@@ -22,15 +24,13 @@ You can try the last released build by running [./demo/index.html](https://rawgi
 >**Note:** Waifu implements `continuous deployment` to Azure.
 
 In the future, the bot is going to be available to:
+* cmd/terminal
+* Twitter
 * Slack
 * Skype
 * Email
 * SMS
 * Probably other stuff...
-
-## How to make Plugins
-
-We don't have anything done yet, so come back later.
 
 ## Install/Run from Source
 
@@ -54,6 +54,10 @@ BFEmulator.exe
 </p>
 
 >**Note:** You will have to provide your appId/appSecret. Put them at the file `./.waifu/secrets.json`.
+
+## How to make Plugins
+
+We don't have anything done yet, so come back later.
 
 ## License
 

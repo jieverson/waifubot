@@ -30,7 +30,12 @@ luis.on('Init', [
 luis.on('Greeting', [
     function (session) {
         //session.send("'%s' too", args.query);
-        session.send("Please, don't say this in front of the others... *shy*");
+        //session.send("Please, don't say this in front of the others... *shy*");
+        var text = "Please, don't say this in front of the others...";
+        var reply = new builder.Message()
+                               .setText(session, text)
+                               .addAttachment({ fallbackText: text, contentType: 'image/jpeg', contentUrl: imageLink });
+        session.endDialog(reply);
     }
 ]);
 
