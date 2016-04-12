@@ -1,23 +1,18 @@
 var restify = require('restify');
 var builder = require('botbuilder');
 
-// Sensitive data load (you should create this file to keep your keys)
-try{
-    var secrets = require('./.waifu/secrets.json');
-}
-catch(ex){
-    var secrets = {
-        botAppId: "YOUR_APP_ID",
-        botAppSecret: "YOUR_APP_SECRET"
-    };
-}
+// Keep your sensitive data safe at environment variables
+var botAppId = process.env.BOT_APP_ID || "YOUR_APP_ID";
+var botAppSecret = process.env.BOT_APP_SECRET || "YOUR_APP_SECRET";
+var luisAppId = process.env.LUIS_APP_ID || "YOUR_LUIS_APP_ID";
+var luisSubscriptionKey = process.env.LUIS_SUBSCRIPTION_KEY || "YOUR_LUIS_SUBSCRIPTION_KEY";
 
 // LUIS: Natural Language
-var languageModel = 'https://api.projectoxford.ai/luis/v1/application?id=ab78644d-ecc4-4cd2-8414-388f05d34d0b&subscription-key=43f70f72c0a34f8598f0fa3faf8bb43e';
-var luis = new builder.LuisDialog(languageModel);
+var luisModelUrl = 'https://api.projectoxford.ai/luis/v1/application?id=' + luisAppId + '&subscription-key=' + luisSubscriptionKey;
+var luis = new builder.LuisDialog(luisModelUrl);
 
 // Create bot and add dialogs
-var bot = new builder.BotConnectorBot({ appId: secrets.botAppId, appSecret: secrets.botAppSecret });
+var bot = new builder.BotConnectorBot({ appId: botAppId, appSecret: botAppSecret });
 bot.add('/', luis);
 
 // Add intent handlers
@@ -71,7 +66,7 @@ luis.onDefault(builder.DialogAction.send("I'm sorry I didn't understand. Say Hel
 
 // Setup Restify Server
 var server = restify.createServer();
-server.post('/api/messages', bot.verifyBotFramework(), bot.listen());
+server.post('/api/bot', bot.verifyBotFramework(), bot.listen());
 server.listen(process.env.port || 3978, function () {
     console.log('%s listening to %s', server.name, server.url); 
 });
