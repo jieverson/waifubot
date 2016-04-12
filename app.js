@@ -27,8 +27,8 @@ luis.on('Greeting', [
         var text = "Please, don't say this in front of the others...";
         var reply = new builder.Message()
                                .setText(session, text)
-                               .addAttachment({ fallbackText: text, contentType: 'image/jpeg', contentUrl: "http://i.imgur.com/v9PfX.jpg" });
-        session.endDialog(reply);
+                               .addAttachment({ fallbackText: text, contentType: 'image/jpeg', contentUrl: "https://github.com/jieverson/waifubot/blob/master/pictures/shy.jpg?raw=true" });
+        session.send(reply);
     }
 ]);
 

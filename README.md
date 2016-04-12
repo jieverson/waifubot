@@ -63,9 +63,22 @@ http://localhost:3978/api/bot
 
 >**Note:** You can create your app at [Bot Framework](https://dev.botframework.com/) if you want to set `BOT_APP_ID` and `BOT_APP_SECRET`.
 
+## Running Tests
+
+This project uses [grunt](http://gruntjs.com/) for running `jshint` and `nodeunit`.
+
+```shell
+# Make sure you have grunt-cli installed globally
+npm install -g grunt-cli
+# Grunt default task is going to execute jshint and nodeunit
+grunt
+```
+
+>**TODO:** [app.js](./app.js) need to be testable.
+
 ## How to make Plugins
 
-We don't have anything done yet, so come back later.
+>**TODO:** We don't have anything done yet, so come back later.
 
 ## License
 
