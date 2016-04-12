@@ -4,7 +4,7 @@
   "description": "todo",
   "main": "app.js",
   "scripts": {
-    "test": "nodeunit tests.js"
+    "test": "grunt nodeunit"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,10 @@
   "dependencies": {
     "botbuilder": "^0.8.0",
     "restify": "^4.0.4"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-nodeunit": "^1.0.0"
   }
 }
