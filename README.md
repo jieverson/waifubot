@@ -49,7 +49,7 @@ set LUIS_SUBSCRIPTION_KEY=YOUR_LUIS_SUBSCRIPTION_KEY
 # Run server at localhost
 node app.js
 # Run BFEmulator
-cd emulator && BFEmulator.exe
+cd emulator & BFEmulator.exe
 # Open emulator settings
 /settings
 # Set current endpoint to:
@@ -62,6 +62,15 @@ http://localhost:3978/api/bot
 </p>
 
 >**Note:** You can create your app at [Bot Framework](https://dev.botframework.com/) if you want to set `BOT_APP_ID` and `BOT_APP_SECRET`.
+
+## Run emulator on Mac/Linux
+
+Folks who are developing on Mac and Linux should know that the BFEmulator works using `mono`.
+
+To install
+
+* Install [Mono](http://www.mono-project.com/download/#download-mac)
+* mono BFEmulator.exe
 
 ## Running Tests
 
