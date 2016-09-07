@@ -19,7 +19,7 @@ A javascript bot for **Anime Lovers**, built using [Microsoft Bot Framework](htt
 
 ## Usage
 
-You can try the last released build by running [./demo/index.html](https://rawgit.com/jieverson/waifubot/master/demo/index.html):
+You can try the last released build by running [./index.html](https://rawgit.com/jieverson/waifubot/master/demo/index.html):
 
 >**Note:** Waifu implements `continuous deployment` to Azure.
 
@@ -63,7 +63,7 @@ http://localhost:3978/api/bot
 
 >**Note:** You can create your app at [Bot Framework](https://dev.botframework.com/) if you want to set `BOT_APP_ID` and `BOT_APP_SECRET`.
 
-## Run emulator on Mac/Linux
+## Running emulator on Mac/Linux
 
 Folks who are developing on Mac and Linux should know that the BFEmulator works using `mono`.
 

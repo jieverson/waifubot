@@ -2,7 +2,7 @@
   "name": "waifubot",
   "version": "0.0.1",
   "description": "todo",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "test": "grunt nodeunit"
   },
