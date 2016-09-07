@@ -1,12 +1,12 @@
 const builder = require('botbuilder')
-const luis = require('./luis.js')
+const dialog = require('./luis.js')
 
 // Add intent handlers
-luis.on('Init', [
+dialog.matches('Init', [
     session => session.send("Okaeri! Nice to see you again senpai. Why don't you ask for current season animes, quotes, jokes or just tell me animes you like?")
 ])
 
-luis.on('Greeting', [
+dialog.matches('Greeting', [
     session => {
         const text = "Please, don't say this in front of the others..."
         const reply = new builder.Message()
@@ -16,7 +16,7 @@ luis.on('Greeting', [
     }
 ])
 
-luis.on('LikeAnime', [
+dialog.matches('LikeAnime', [
     (session, args) => {
         if(args && args.entities && args.entities.length > 0){
             session.send("Cool! I like '%s' too.", args.entities[0].entity)
@@ -27,21 +27,21 @@ luis.on('LikeAnime', [
     }
 ])
 
-luis.on('CurrentSeasonAnimes', [
+dialog.matches('CurrentSeasonAnimes', [
     session => session.send('Not implemented yet. But I will work hard on it senpai!')
 ])
 
-luis.on('Quote', [
+dialog.matches('Quote', [
     (session, args) => {
         session.send("Developers say they are lazy to crawler a quote's website just to make you happy.")
     }
 ])
 
-luis.on('TellJoke', [
+dialog.matches('TellJoke', [
     session => session.send('How does Hei like his coffee? Darker Than Black :)')
 ])
 
 // No intent match
-luis.onDefault(builder.DialogAction.send("I'm sorry I didn't understand. Say Hello."))
+dialog.onDefault(builder.DialogAction.send("I'm sorry I didn't understand. Say Hello."))
 
-module.exports = luis
+module.exports = dialog
