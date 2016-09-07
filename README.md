@@ -19,7 +19,7 @@ A javascript bot for **Anime Lovers**, built using [Microsoft Bot Framework](htt
 
 ## Usage
 
-You can try the last released build by running [./index.html](https://rawgit.com/jieverson/waifubot/master/demo/index.html):
+You can try the last released build by running [./index.html](https://rawgit.com/jieverson/waifubot/master/index.html):
 
 >**Note:** Waifu implements `continuous deployment` to Azure.
 
