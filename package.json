@@ -1,7 +1,7 @@
 {
   "name": "waifubot",
   "version": "0.0.1",
-  "description": "todo",
+  "description": "A javascript bot for Anime Lovers",
   "main": "server.js",
   "scripts": {
     "test": "grunt nodeunit"
@@ -24,10 +24,5 @@
   "dependencies": {
     "botbuilder": "^3.2.3",
     "restify": "^4.1.1"
-  },
-  "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-contrib-jshint": "^1.0.0",
-    "grunt-contrib-nodeunit": "^1.0.0"
   }
 }

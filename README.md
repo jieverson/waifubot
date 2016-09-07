@@ -24,7 +24,7 @@ You can try the last released build by running [./index.html](https://rawgit.com
 >**Note:** Waifu implements `continuous deployment` to Azure.
 
 In the future, the bot is going to be available to:
-* cmd/terminal
+* terminal
 * Twitter
 * Slack
 * Skype
@@ -34,6 +34,7 @@ In the future, the bot is going to be available to:
 
 ## Install/Run from Source
 
+Create your bot at [Bot Framework](https://dev.botframework.com/) and get a appId and appPassword.
 Create a new app at [LUIS](https://www.luis.ai/) importing our provided [luis_model.json](./luis_model.json).
 
 ```shell
@@ -44,50 +45,19 @@ cd waifubot
 # Install dependencies
 npm install
 # Set environment variables
+set BOT_APP_ID=YOUR_BOT_APP_ID
+set BOT_APP_PASSWORD=YOUR_BOT_APP_PASSWORD
 set LUIS_APP_ID=YOUR_LUIS_APP_ID
 set LUIS_SUBSCRIPTION_KEY=YOUR_LUIS_SUBSCRIPTION_KEY
 # Run server at localhost
-node app.js
-# Run BFEmulator
-cd emulator & BFEmulator.exe
-# Open emulator settings
-/settings
-# Set current endpoint to:
-http://localhost:3978/api/bot
-# Say Hi, and have some fun :)
+node .
 ```
 
-<p align="center">
-  <img src="docs/images/emulator.gif" />
-</p>
+## Running on emulator
 
->**Note:** You can create your app at [Bot Framework](https://dev.botframework.com/) if you want to set `BOT_APP_ID` and `BOT_APP_SECRET`.
-
-## Running emulator on Mac/Linux
-
-Folks who are developing on Mac and Linux should know that the BFEmulator works using `mono`.
-
-To install
-
-* Install [Mono](http://www.mono-project.com/download/#download-mac)
-* mono BFEmulator.exe
-
-## Running Tests
-
-This project uses [grunt](http://gruntjs.com/) for running `jshint` and `nodeunit`.
-
-```shell
-# Make sure you have grunt-cli installed globally
-npm install -g grunt-cli
-# Grunt default task is going to execute jshint and nodeunit
-grunt
-```
-
->**TODO:** [app.js](./app.js) need to be testable.
-
-## How to make Plugins
-
->**TODO:** We don't have anything done yet, so come back later.
+Download and install Bot [Framework Channel Emulator](https://download.botframework.com/bf-v3/tools/emulator/publish.htm).
+Setup your AppId and appPassword.
+Make sure Bot Url is set to your node server.
 
 ## License
 
