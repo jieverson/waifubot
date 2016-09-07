@@ -22,8 +22,8 @@
   },
   "homepage": "https://github.com/jieverson/waifubot#readme",
   "dependencies": {
-    "botbuilder": "^0.8.0",
-    "restify": "^4.0.4"
+    "botbuilder": "^3.2.3",
+    "restify": "^4.1.1"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
