@@ -9,10 +9,14 @@ dialog.matches('Init', [
 dialog.matches('Greeting', [
     session => {
         const text = "Please, don't say this in front of the others..."
-        const reply = new builder.Message()
-                               .setText(session, text)
-                               .addAttachment({ fallbackText: text, contentType: 'image/jpeg', contentUrl: 'https://github.com/jieverson/waifubot/blob/master/pictures/shy.jpg?raw=true' })
-        session.send(reply)
+        const img = 'https://github.com/jieverson/waifubot/blob/master/pictures/shy.jpg?raw=true'
+        const card = new builder.HeroCard(session)
+            .text(text)
+            .images([
+                 builder.CardImage.create(session, img)
+            ])
+        const msg = new builder.Message(session).attachments([card])
+        session.send(msg)
     }
 ])
 
