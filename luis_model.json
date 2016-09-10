@@ -771,7 +771,7 @@
     },
     {
       "text": "i like anime",
-      "intent": "CurrentSeasonAnimes",
+      "intent": "LikeAnime",
       "entities": []
     },
     {
@@ -900,6 +900,369 @@
     {
       "text": "fuck",
       "intent": "Angry",
+      "entities": []
+    },
+    {
+      "text": "fuck off",
+      "intent": "Angry",
+      "entities": []
+    },
+    {
+      "text": "cause i hate you",
+      "intent": "Angry",
+      "entities": []
+    },
+    {
+      "text": "i wanna talk about yu gi oh",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 4,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "airing animes",
+      "intent": "CurrentSeasonAnimes",
+      "entities": []
+    },
+    {
+      "text": "?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i wanna talk about food wars",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 4,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "i wanna talk about shokugenki no soma",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 4,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "i wanna talk about ev",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "blee",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i wanna talk about eva",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "have you seen fate?",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "mikasa!",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "what about steins gate?",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i wanna talk about shokugenki no souma",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 4,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "i wanna talk about blue cat",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 4,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "so i hate you now",
+      "intent": "Angry",
+      "entities": []
+    },
+    {
+      "text": "have you seen eva?",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i like makise kurisu",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "lets talk about shokugenki no soma",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 3,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "=]",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "what are the current season anime?",
+      "intent": "CurrentSeasonAnimes",
+      "entities": []
+    },
+    {
+      "text": "i like bleeeee",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "yes, i would like to talk about blue cat",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 8,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "wanna talk about eva",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i like fate",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "wanna talk about steins gate",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "i wanna know more about steins gate",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 5,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "i wanna know more about kurisu",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "lets talk about eva",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i want to talk about eva",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "i want to talk about pokemon xy",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 5,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "i like kurisu",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "who is rias?",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "talk about eva",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "talk about uzumaki naruto",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "talk about naruto",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "hello dear :)",
+      "intent": "Init",
+      "entities": []
+    },
+    {
+      "text": "could you list me current season anime?",
+      "intent": "CurrentSeasonAnimes",
+      "entities": []
+    },
+    {
+      "text": "could you tell me current season anime?",
+      "intent": "CurrentSeasonAnimes",
       "entities": []
     }
   ]
