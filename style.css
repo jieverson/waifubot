@@ -26,6 +26,10 @@ main {
     text-align: center;
 }
 
+.slack {
+    margin: 12px;
+}
+
 footer {
     background-color: #1a1a1a;
     position: fixed;
