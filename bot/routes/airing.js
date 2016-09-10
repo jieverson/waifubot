@@ -4,7 +4,6 @@ const airing = require('../anilist/airing')
 dialog.matches('CurrentSeasonAnimes', [
     session => {
         airing.get().then(animes => {
-            console.log(animes.length)
             session.send('Current season animes are: ')
             animes = animes.map(x => '- ' + x)
             animes = animes.reduce((p,c,i) => {
