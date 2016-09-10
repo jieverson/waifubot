@@ -8,7 +8,9 @@ dialog.matches('LikeAnime', [
             const name = args.entities[0].entity
             anime_search.find(name).then(anime => {
                 session.send("Cool! Let's talk about %s.", anime.title_english)
-                session.sendImg(anime.image_url_banner)
+                if(anime.image_url_banner) {
+                    session.sendImg(anime.image_url_banner)
+                }
                 session.send(anime.description.substr(0, 100) + '...')
             }).catch(err => {
                 session.sendImg('https://github.com/jieverson/waifubot/blob/master/pictures/thinking.jpg?raw=true')
