@@ -1,53 +1,63 @@
 {
-  "luis_schema_version": "1.2.0",
+  "luis_schema_version": "1.3.0",
   "name": "Waifu",
   "desc": "",
   "culture": "en-us",
   "intents": [
     {
-      "Name": "LikeAnime",
-      "Children": []
+      "name": "Angry"
     },
     {
-      "Name": "Greeting",
-      "Children": []
+      "name": "CurrentSeasonAnimes"
     },
     {
-      "Name": "CurrentSeasonAnimes",
-      "Children": []
+      "name": "Greeting"
     },
     {
-      "Name": "Quote",
-      "Children": []
+      "name": "Init"
     },
     {
-      "Name": "TellJoke",
-      "Children": []
+      "name": "LikeAnime"
     },
     {
-      "Name": "None",
-      "Children": []
+      "name": "None"
     },
     {
-      "Name": "Init",
-      "Children": []
+      "name": "Quote"
+    },
+    {
+      "name": "TellJoke"
     }
   ],
   "entities": [
     {
-      "Name": "Anime",
-      "Children": []
+      "name": "Anime"
     },
     {
-      "Name": "Character",
-      "Children": []
+      "name": "Character"
     }
   ],
+  "composites": [],
   "bing_entities": [],
   "actions": [],
   "model_features": [],
   "regex_features": [],
   "utterances": [
+    {
+      "text": "can you tell a joke?",
+      "intent": "TellJoke",
+      "entities": []
+    },
+    {
+      "text": "tell me a joke",
+      "intent": "TellJoke",
+      "entities": []
+    },
+    {
+      "text": "say a joke please",
+      "intent": "TellJoke",
+      "entities": []
+    },
     {
       "text": "i would like to hear a joke",
       "intent": "TellJoke",
@@ -59,28 +69,8 @@
       "entities": []
     },
     {
-      "text": "winter season",
-      "intent": "CurrentSeasonAnimes",
-      "entities": []
-    },
-    {
-      "text": "fall season",
-      "intent": "CurrentSeasonAnimes",
-      "entities": []
-    },
-    {
-      "text": "spring season",
-      "intent": "CurrentSeasonAnimes",
-      "entities": []
-    },
-    {
-      "text": "summer season",
-      "intent": "CurrentSeasonAnimes",
-      "entities": []
-    },
-    {
-      "text": "can you tell a joke?",
-      "intent": "TellJoke",
+      "text": "are you joking?",
+      "intent": "None",
       "entities": []
     },
     {
@@ -89,32 +79,27 @@
       "entities": []
     },
     {
+      "text": "i do not want a joke",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "do not say a joke",
+      "intent": "None",
+      "entities": []
+    },
+    {
       "text": "say a joke",
       "intent": "TellJoke",
       "entities": []
     },
     {
-      "text": "say a joke please",
-      "intent": "TellJoke",
-      "entities": []
-    },
-    {
-      "text": "animes summer",
+      "text": "what are the current season animes?",
       "intent": "CurrentSeasonAnimes",
       "entities": []
     },
     {
-      "text": "animes winter",
-      "intent": "CurrentSeasonAnimes",
-      "entities": []
-    },
-    {
-      "text": "tell me a joke",
-      "intent": "TellJoke",
-      "entities": []
-    },
-    {
-      "text": "animes spring",
+      "text": "what animes are streaming now?",
       "intent": "CurrentSeasonAnimes",
       "entities": []
     },
@@ -129,32 +114,42 @@
       "entities": []
     },
     {
-      "text": "what animes are streaming now?",
+      "text": "animes spring",
       "intent": "CurrentSeasonAnimes",
-      "entities": []
-    },
-    {
-      "text": "do not say a joke",
-      "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "what are the current season animes?",
-      "intent": "CurrentSeasonAnimes",
-      "entities": []
-    },
-    {
-      "text": "i do not want a joke",
-      "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "are you joking?",
-      "intent": "None",
       "entities": []
     },
     {
       "text": "animes fall",
+      "intent": "CurrentSeasonAnimes",
+      "entities": []
+    },
+    {
+      "text": "animes winter",
+      "intent": "CurrentSeasonAnimes",
+      "entities": []
+    },
+    {
+      "text": "animes summer",
+      "intent": "CurrentSeasonAnimes",
+      "entities": []
+    },
+    {
+      "text": "summer season",
+      "intent": "CurrentSeasonAnimes",
+      "entities": []
+    },
+    {
+      "text": "fall season",
+      "intent": "CurrentSeasonAnimes",
+      "entities": []
+    },
+    {
+      "text": "spring season",
+      "intent": "CurrentSeasonAnimes",
+      "entities": []
+    },
+    {
+      "text": "winter season",
       "intent": "CurrentSeasonAnimes",
       "entities": []
     },
@@ -591,7 +586,7 @@
     },
     {
       "text": "i like",
-      "intent": "None",
+      "intent": "LikeAnime",
       "entities": []
     },
     {
@@ -673,6 +668,238 @@
     {
       "text": "hi?",
       "intent": "Init",
+      "entities": []
+    },
+    {
+      "text": "i love you baby",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "i lie fairy tail",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "why are you here?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "how are you?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "what is your name?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i like shimoneta",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "animes",
+      "intent": "CurrentSeasonAnimes",
+      "entities": []
+    },
+    {
+      "text": "sao",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "hey",
+      "intent": "Init",
+      "entities": []
+    },
+    {
+      "text": ":p",
+      "intent": "Init",
+      "entities": []
+    },
+    {
+      "text": "jokes",
+      "intent": "TellJoke",
+      "entities": []
+    },
+    {
+      "text": "quotes",
+      "intent": "Quote",
+      "entities": []
+    },
+    {
+      "text": "answe me",
+      "intent": "Init",
+      "entities": []
+    },
+    {
+      "text": "what is my name?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "sakurasou no pet na kanojo",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 0,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "i like anime",
+      "intent": "CurrentSeasonAnimes",
+      "entities": []
+    },
+    {
+      "text": "a",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "stupid",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "fuck you",
+      "intent": "Angry",
+      "entities": []
+    },
+    {
+      "text": "i hate you",
+      "intent": "Angry",
+      "entities": []
+    },
+    {
+      "text": "what are the airing animes?",
+      "intent": "CurrentSeasonAnimes",
+      "entities": []
+    },
+    {
+      "text": "i like narutop",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "quote",
+      "intent": "Quote",
+      "entities": []
+    },
+    {
+      "text": "season",
+      "intent": "CurrentSeasonAnimes",
+      "entities": []
+    },
+    {
+      "text": "i love you!",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "current season animes",
+      "intent": "CurrentSeasonAnimes",
+      "entities": []
+    },
+    {
+      "text": "i like animes",
+      "intent": "LikeAnime",
+      "entities": []
+    },
+    {
+      "text": "i love u",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "squirrel and hedgehog",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 0,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "mikasa",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "anime",
+      "intent": "LikeAnime",
+      "entities": []
+    },
+    {
+      "text": "what about naruto?",
+      "intent": "LikeAnime",
+      "entities": [
+        {
+          "entity": "Anime",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "i love you baby!",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "shut up",
+      "intent": "Angry",
+      "entities": []
+    },
+    {
+      "text": "shut off",
+      "intent": "Angry",
+      "entities": []
+    },
+    {
+      "text": "i hate u",
+      "intent": "Angry",
+      "entities": []
+    },
+    {
+      "text": "go to hell",
+      "intent": "Angry",
+      "entities": []
+    },
+    {
+      "text": "fuck",
+      "intent": "Angry",
       "entities": []
     }
   ]
