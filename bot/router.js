@@ -1,5 +1,6 @@
 const builder = require('botbuilder')
 const dialog = require('./luis.js')
+const anime_search = require('./anilist/search.js')
 
 // Add intent handlers
 dialog.matches('Init', [
@@ -23,10 +24,13 @@ dialog.matches('Greeting', [
 dialog.matches('LikeAnime', [
     (session, args) => {
         if(args && args.entities && args.entities.length > 0){
-            session.send("Cool! I like '%s' too.", args.entities[0].entity)
+            const name = args.entities[0].entity
+            anime_search.find(name).then(anime => {
+                session.send("Cool! I like '%s' too.", name /*anime.title_english*/)
+            })
         }
         else{
-            session.send("I'm so happy you liked this Anime.")
+            session.send("I'm so happy you like animes like me")
         }
     }
 ])
