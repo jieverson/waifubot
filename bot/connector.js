@@ -11,6 +11,7 @@ const connector = new builder.ChatConnector({
     appPassword: appPassword
 })
 const bot = new builder.UniversalBot(connector);
+bot.use(builder.Middleware.sendTyping())
 bot.dialog('/', router)
 
 module.exports = connector
