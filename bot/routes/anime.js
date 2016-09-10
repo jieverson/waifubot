@@ -7,11 +7,21 @@ dialog.matches('LikeAnime', [
         if(args && args.entities && args.entities.length > 0){
             const name = args.entities[0].entity
             anime_search.find(name).then(anime => {
-                session.send("Cool! Let's talk about '%s'.", anime.title_english)
+                session.send("Cool! Let's talk about %s.", anime.title_english)
                 const card = new builder.HeroCard(session)
                     .text(anime.description.substr(0, 100) + '...')
                     .images([
                         builder.CardImage.create(session, anime.image_url_banner)
+                    ])
+                const msg = new builder.Message(session).attachments([card])
+                session.send(msg)
+            }).catch(err => {
+                const text = "Sorry, I don't know anything about " + name
+                const img = 'https://github.com/jieverson/waifubot/blob/master/pictures/thinking.jpg?raw=true'
+                const card = new builder.HeroCard(session)
+                    .text(text)
+                    .images([
+                        builder.CardImage.create(session, img)
                     ])
                 const msg = new builder.Message(session).attachments([card])
                 session.send(msg)

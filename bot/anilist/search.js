@@ -11,6 +11,7 @@ module.exports = {
             .then(response => response.json())
             .then(data => data[0])
             .then(anime => resolve(anime))
+            .catch(err => reject(err))
         })
     })
 } 
