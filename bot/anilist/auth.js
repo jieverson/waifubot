@@ -16,11 +16,8 @@ module.exports = {
             method: 'post',
             body: data
         })
-        .then(response => {
-            response.json().then(data => {
-                resolve(data.access_token)
-            })
-        })
+        .then(response => response.json())
+        .then(data => resolve(data.access_token))
         .catch(err => {
             console.log(err)
         })

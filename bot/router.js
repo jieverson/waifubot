@@ -26,7 +26,7 @@ dialog.matches('LikeAnime', [
         if(args && args.entities && args.entities.length > 0){
             const name = args.entities[0].entity
             anime_search.find(name).then(anime => {
-                session.send("Cool! I like '%s' too.", name /*anime.title_english*/)
+                session.send("Cool! I like '%s' too.", anime.title_english)
             })
         }
         else{
