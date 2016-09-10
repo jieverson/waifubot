@@ -38,8 +38,11 @@ In the future, the bot is going to be available to:
 
 ## Install/Run from Source
 
-Create your bot at [Bot Framework](https://dev.botframework.com/) and get a appId and appPassword.
-Create a new app at [LUIS](https://www.luis.ai/) importing our provided [luis_model.json](./luis_model.json).
+To run the bot, you will first need to get some appIds/secrets from services we use.
+
+- Create a bot at [Bot Framework](https://dev.botframework.com/) and get an appId and appPassword.
+- Create a new app at [LUIS](https://www.luis.ai/) importing our provided [luis_model.json](./luis_model.json).
+- Get an account at [AniList](http://anilist.co/) and create a new app.
 
 ```shell
 # Clone this repo
