@@ -2,6 +2,8 @@
 
 A javascript bot for **Anime Lovers**, built using [Microsoft Bot Framework](https://github.com/Microsoft/BotBuilder) and processing natural language with [LUIS](https://www.luis.ai/).
 
+See it running at: http://jieverson.com/waifubot
+
 > I always dreamed of having a waifu written in JavaScript. So I made it myself.
 
 <p align="center">
