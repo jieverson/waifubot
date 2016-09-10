@@ -1,6 +1,6 @@
 const FormData = require('form-data')
 const fetch = require('node-fetch')
-const base = require('./base.js')
+const base_uri = require('./api-uri.js')
 
 const clientId = process.env.ANILIST_CLIENT_ID || 'YOUR_CLIENT_ID'
 const clientSecret = process.env.ANILIST_CLIENT_SECRET || 'YOUR_CLIENT_SECRET'
@@ -12,7 +12,7 @@ module.exports = {
         data.append('grant_type', 'client_credentials')
         data.append('client_id', clientId)
         data.append('client_secret', clientSecret)
-        fetch(base.url + auth_url, { 
+        fetch(base_uri + auth_url, { 
             method: 'post',
             body: data
         })
