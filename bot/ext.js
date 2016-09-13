@@ -1,5 +1,4 @@
 const builder = require('botbuilder')
-const router = require('./router.js')
 
 builder.Session.prototype.sendImg = function(img) {
     let self = this

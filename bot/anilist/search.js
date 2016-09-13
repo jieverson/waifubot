@@ -10,7 +10,8 @@ module.exports = {
             let uri = base_uri + route + name + q + token
             fetch(uri)
             .then(response => response.json())
-            .then(data => data[0])
+            .then(list => list.sort((a, b) => b.popularity - a.popularity))
+            .then(list => list[0])
             .then(item => resolve(item))
             .catch(err => reject(err))
         })

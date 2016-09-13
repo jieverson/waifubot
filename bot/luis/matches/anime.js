@@ -1,7 +1,7 @@
 const builder = require('botbuilder')
 const dialog = require('../luis.js')
-const anime_search = require('../anilist/anime.js')
-const character_search = require('../anilist/character.js')
+const anime_search = require('../../anilist/anime.js')
+const character_search = require('../../anilist/character.js')
 
 dialog.matches('LikeAnime', [
     (session, args) => {

@@ -1,5 +1,5 @@
 const dialog = require('../luis.js')
-const airing = require('../anilist/airing')
+const airing = require('../../anilist/airing')
 
 dialog.matches('CurrentSeasonAnimes', [
     session => {

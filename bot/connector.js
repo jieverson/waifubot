@@ -1,5 +1,5 @@
 const builder = require('botbuilder')
-const router = require('./router.js')
+const dialog = require('./luis/dialog.js')
 
 require('./ext.js')
 
@@ -14,6 +14,6 @@ let connector = new builder.ChatConnector({
 })
 let bot = new builder.UniversalBot(connector);
 bot.use(builder.Middleware.sendTyping())
-bot.dialog('/', router)
+bot.dialog('/', dialog)
 
 module.exports = connector
