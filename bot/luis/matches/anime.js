@@ -13,7 +13,7 @@ dialog.matches('LikeAnime', [
                 if(anime.image_url_banner) {
                     session.sendImg(anime.image_url_banner)
                 }
-                session.send(anime.description.substr(0, 150) + '...')
+                session.send(anime.description.substr(0, 200) + '...')
             }).catch(err => {
                 character_search.find(name).then(character => {
                     session.send(character.name_last + ' ' + character.name_first)
@@ -23,7 +23,7 @@ dialog.matches('LikeAnime', [
                     if(character.image_url_lge){
                         session.sendImg(character.image_url_lge)
                     }
-                    session.send(character.info.substr(0, 150) + '...')
+                    session.send(character.info.substr(0, 200) + '...')
                 })
                 .catch(err => {
                     session.sendImg('https://github.com/jieverson/waifubot/blob/master/pictures/thinking.jpg?raw=true')
