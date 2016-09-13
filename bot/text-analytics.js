@@ -1,15 +1,12 @@
-const FormData = require('form-data')
 const fetch = require('node-fetch')
+const sentiment = require('./sentiment')
 
 // Keep your sensitive data safe at environment variables
 const key = process.env.TEXT_ANALYTICS_KEY || 'YOUR_TEXT_ANALYTICS_KEY'
 
 module.exports = {
-    sentiment: text => new Promise((resolve, reject) => {
+    sentiment: (text, session) => {
         const url = 'https://westus.api.cognitive.microsoft.com/text/analytics/v2.0/sentiment'
-        let headers = new FormData()
-        headers.append("Content-Type", "application/json");
-        headers.append("Ocp-Apim-Subscription-Key", key);
         let data = {
             documents: [{
                 language: 'en',
@@ -20,7 +17,6 @@ module.exports = {
         let dataStr = JSON.stringify(data)
         fetch(url, {
             method: 'post',
-            //headers: headers.getHeaders(),
             headers: {
                 'Content-Type': 'application/json',
                 'Ocp-Apim-Subscription-Key': key
@@ -29,7 +25,7 @@ module.exports = {
         })
         .then(response => response.json())
         .then(data => data.documents[0])
-        .then(doc => resolve(doc.score))
-        .catch(err => reject(err))
-    })
+        .then(doc => sentiment(doc.score, session))
+        .catch(err => session.send("I'm sorry I didn't understand. Say Hello."))
+    }
 }

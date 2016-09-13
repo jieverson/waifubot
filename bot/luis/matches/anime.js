@@ -2,6 +2,7 @@ const builder = require('botbuilder')
 const dialog = require('../luis.js')
 const anime_search = require('../../anilist/anime.js')
 const character_search = require('../../anilist/character.js')
+const text_analytics = require('../../text-analytics')
 
 dialog.matches('LikeAnime', [
     (session, args) => {
@@ -31,8 +32,7 @@ dialog.matches('LikeAnime', [
             })
         }
         else{
-            session.sendImg('https://github.com/jieverson/waifubot/blob/master/pictures/like.jpg?raw=true')
-            session.send("I'm so happy you like animes like me")
+            text_analytics.sentiment(session.message.text, session)
         }
     }
 ])
