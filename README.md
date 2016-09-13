@@ -43,6 +43,7 @@ To run the bot, you will first need to get some appIds/secrets from services we 
 - Create a bot at [Bot Framework](https://dev.botframework.com/) and get an appId and appPassword.
 - Create a new app at [LUIS](https://www.luis.ai/) importing our provided [luis_model.json](./luis_model.json).
 - Get an account at [AniList](http://anilist.co/) and create a new app.
+- Get a key for [Microsoft Text Analytics API](https://www.microsoft.com/cognitive-services/en-us/text-analytics-api).
 
 ```shell
 # Clone this repo
@@ -58,6 +59,7 @@ set LUIS_APP_ID=YOUR_LUIS_APP_ID
 set LUIS_SUBSCRIPTION_KEY=YOUR_LUIS_SUBSCRIPTION_KEY
 set ANILIST_CLIENT_ID=YOUR_ANILIST_CLIENT_ID
 set ANILIST_CLIENT_SECRET=YOUR_ANILIST_CLIENT_SECRET
+set TEXT_ANALYTICS_KEY=YOUR_TEXT_MICROSOFT_ANALYTICS_KEY
 # Run server at localhost
 node .
 ```
