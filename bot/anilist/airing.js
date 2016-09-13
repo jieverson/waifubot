@@ -13,6 +13,8 @@ module.exports = {
             .then(response => response.json())
             .then(data => data.map(x => x.title_english))
             .then(animes => resolve(animes))
+            .catch(err => reject(err))
         })
+        .catch(err => reject(err))
     })
 }

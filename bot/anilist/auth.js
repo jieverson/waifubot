@@ -8,7 +8,7 @@ const clientSecret = process.env.ANILIST_CLIENT_SECRET || 'YOUR_CLIENT_SECRET'
 module.exports = {
     get_token: () => new Promise((resolve, reject) => {
         const auth_url = 'auth/access_token'
-        const data = new FormData()
+        let data = new FormData()
         data.append('grant_type', 'client_credentials')
         data.append('client_id', clientId)
         data.append('client_secret', clientSecret)
@@ -18,8 +18,6 @@ module.exports = {
         })
         .then(response => response.json())
         .then(data => resolve(data.access_token))
-        .catch(err => {
-            console.log(err)
-        })
+        .catch(err => reject(err))
     })
 }

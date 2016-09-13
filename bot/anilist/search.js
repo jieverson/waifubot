@@ -7,12 +7,13 @@ module.exports = {
         auth.get_token().then(token => {
             const route = entity + '/search/'
             const q = '?access_token='
-            const uri = base_uri + route + name + q + token
+            let uri = base_uri + route + name + q + token
             fetch(uri)
             .then(response => response.json())
             .then(data => data[0])
             .then(item => resolve(item))
             .catch(err => reject(err))
         })
+        .catch(err => reject(err))
     })
 }

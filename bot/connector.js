@@ -8,11 +8,11 @@ const appId = process.env.BOT_APP_ID || 'YOUR_APP_ID'
 const appPassword = process.env.BOT_APP_PASSWORD || 'YOUR_APP_PASSWORD'
 
 // Create bot and add router
-const connector = new builder.ChatConnector({
+let connector = new builder.ChatConnector({
     appId: appId,
     appPassword: appPassword
 })
-const bot = new builder.UniversalBot(connector);
+let bot = new builder.UniversalBot(connector);
 bot.use(builder.Middleware.sendTyping())
 bot.dialog('/', router)
 

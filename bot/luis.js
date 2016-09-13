@@ -6,7 +6,7 @@ const subscriptionKey = process.env.LUIS_SUBSCRIPTION_KEY || 'YOUR_LUIS_SUBSCRIP
 
 // LUIS: Natural Language
 const modelUrl = 'https://api.projectoxford.ai/luis/v1/application?id=' + appId + '&subscription-key=' + subscriptionKey
-const recognizer = new builder.LuisRecognizer(modelUrl);
-const dialog = new builder.IntentDialog({ recognizers: [recognizer] });
+let recognizer = new builder.LuisRecognizer(modelUrl);
+let dialog = new builder.IntentDialog({ recognizers: [recognizer] });
 
 module.exports = dialog

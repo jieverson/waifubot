@@ -6,7 +6,7 @@ const character_search = require('../anilist/character.js')
 dialog.matches('LikeAnime', [
     (session, args) => {
         if(args && args.entities && args.entities.length > 0){
-            const name = args.entities[0].entity
+            let name = args.entities[0].entity
             anime_search.find(name).then(anime => {
                 session.send(anime.title_english)
                 if(anime.image_url_banner) {
