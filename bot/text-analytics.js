@@ -14,14 +14,13 @@ module.exports = {
                 text: text
             }]
         }
-        let dataStr = JSON.stringify(data)
         fetch(url, {
             method: 'post',
             headers: {
                 'Content-Type': 'application/json',
                 'Ocp-Apim-Subscription-Key': key
             },
-            body: dataStr
+            body: JSON.stringify(data)
         })
         .then(response => response.json())
         .then(data => data.documents[0])
