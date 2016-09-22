@@ -1,5 +1,9 @@
 # waifubot
 
+[![status](https://img.shields.io/badge/status-early%20development-red.svg)](http://jieverson.com/waifubot/)
+[![Build Status](https://travis-ci.org/jieverson/waifubot.svg?branch=master)](https://travis-ci.org/jieverson/waifubot)
+[![license](https://img.shields.io/npm/l/express.svg?maxAge=2592000)](./LICENSE)
+
 A javascript bot for **Anime Lovers**, built using [Microsoft Bot Framework](https://github.com/Microsoft/BotBuilder) and processing natural language with [LUIS](https://www.luis.ai/).
 
 See it running at: http://jieverson.com/waifubot, or
