@@ -1,6 +1,6 @@
 # waifubot
 
-[![status](https://img.shields.io/badge/status-early%20development-red.svg)](http://jieverson.com/waifubot/)
+[![status](https://img.shields.io/badge/status-early%20development-yellow.svg)](http://jieverson.com/waifubot/)
 [![Build Status](https://travis-ci.org/jieverson/waifubot.svg?branch=master)](https://travis-ci.org/jieverson/waifubot)
 [![license](https://img.shields.io/npm/l/express.svg?maxAge=2592000)](./LICENSE)
 
@@ -73,7 +73,3 @@ node .
 Download and install Bot [Framework Channel Emulator](https://download.botframework.com/bf-v3/tools/emulator/publish.htm).
 Setup your AppId and appPassword.
 Make sure Bot Url is set to your node server.
-
-## License
-
-[The MIT License (MIT)](./LICENSE)
