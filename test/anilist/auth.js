@@ -1,6 +1,6 @@
-suite('anilist', function(){
-    suite('auth', function(){
-        test('get_token should return a valid token', function(done){
+describe('anilist', function(){
+    describe('auth', function(){
+        it('get_token should return a valid token', function(done){
             const token = 'hAUDHUASHDuahDUAHSUDAsaagd'
             
             const fetch = sinon.stub()
@@ -18,6 +18,10 @@ suite('anilist', function(){
                 .then(x => x.should.equal(token))
                 .then(x => done())
                 .catch(done)
+        })
+
+        after(function(){
+            require_subvert.cleanUp()
         })
     })
 })

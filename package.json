@@ -4,7 +4,7 @@
   "description": "A javascript bot for Anime Lovers",
   "main": "server.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha --reporter nyan --ui tdd --recursive --require ./test/setup"
+    "test": "./node_modules/mocha/bin/mocha --reporter nyan --recursive --require ./test/setup"
   },
   "repository": {
     "type": "git",
