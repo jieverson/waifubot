@@ -4,7 +4,7 @@
   "description": "A javascript bot for Anime Lovers",
   "main": "server.js",
   "scripts": {
-    "test": "grunt nodeunit"
+    "test": "./node_modules/mocha/bin/mocha --reporter nyan --ui tdd --recursive --require ./test/setup"
   },
   "repository": {
     "type": "git",
@@ -26,5 +26,11 @@
     "form-data": "^1.0.1",
     "node-fetch": "^1.6.0",
     "restify": "^4.1.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2",
+    "require-subvert": "^0.1.0",
+    "sinon": "^1.17.6"
   }
 }
